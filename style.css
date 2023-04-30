@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    overflow-x: hidden;
+    color: white;
+    background-color: #7322ff;
+    font-family: Nunito, sans-serif;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #7322ff;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #2d007b;
+  }
+
+  
+
+main, footer{
+    width: 100vw;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+border-bottom: 2px solid rgba(0,0,0,.25);
+
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    background-color:#7322ff;
+}
+
+
+p ,h4, h3{
+    font-size: 2.5rem;
+}
+
+label{
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+button{
+    background-color: rgb(255, 255, 255);
+    font-weight: bold;
+    color: black;
+    padding:1rem 5rem;
+    border: none;
+    margin: 1rem 0;
+    border-radius: 1rem;
+}
+
+.camera{
+    min-width: 400px;
+    min-height:400px;
+    max-width: 300px;
+    max-height: 300px;
+    box-shadow: 5px 5px 10px rgba(0,0,0,.25);
+    margin: 1rem;
+    border-radius: 1rem;
+}
+
+button:hover{
+    background-color: grey;
+}
+
+h4{
+    text-align: center;
+    max-width: 500px;
+}
+
+
+.img{
+    padding: 1rem;
+    box-shadow: 5px 5px 10px rgba(0,0,0,.25);
+    width: 40%;
+    height: 40%;
+    margin: 2rem;
+    transition: 0.2s ease-in-out;
+    background-color: white;
+}
+
+.img > img{
+    width: 100%;
+}
+
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.img:hover{
+    border-radius: 2rem;
+    transform: scale(1.05);
+}
